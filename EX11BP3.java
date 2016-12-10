@@ -24,9 +24,9 @@ System.out.println("number is "+secondinteger);
 //value2 = Integer.valueof(name);
 secondinteger = Integer.parseInt(name);
 
-if(firstinteger>=second integer){
-secondinteger=lowernumber;}
+if(firstinteger>=secondinteger){
+lowernumber=secondinteger;}
 if(firstinteger<=secondinteger){
-firstinteger=lowernumber;}
+lowernumber=secondinteger;}
 for(count=lowernumber;count--){
 =firstinteger/count
