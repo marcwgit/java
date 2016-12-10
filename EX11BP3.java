@@ -29,5 +29,7 @@ lowernumber=secondinteger;}
 if(firstinteger<=secondinteger){
 lowernumber=firstinteger;}
 for(count=lowernumber;count>1;count--){
-if((firstinteger%count==0)&&(secondinteger%count==0)){
+if((firstinteger%count==0)&&(secondinteger%count==0)){}
+	break
+	System.out.print(count);
 	
