@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 //import java.io.*;
-public class EX11BP3 {
+public class ex13p3{
 
 	public static void main(String[] args)throws Exception
 	{
@@ -10,7 +10,8 @@ public class EX11BP3 {
 		 BufferedReader br=new BufferedReader(r); 
 		// TODO Auto-generated method stub
 
-int firstinteger, secondinteger, gcf, lowernumber;
+int firstinteger=0, secondinteger=0, gcf=0, lowernumber=0;
+String name="";
 
 System.out.println("Enter an integer: ");  
 name=br.readLine(); 
@@ -28,7 +29,7 @@ if(firstinteger>=secondinteger){
 lowernumber=secondinteger;}
 if(firstinteger<=secondinteger){
 lowernumber=firstinteger;}
-for(count=lowernumber;count>1;count--){
+for(int count=lowernumber;count>1;count--){
 if((firstinteger%count==0)&&(secondinteger%count==0)){
 System.out.print(count);
 		break;}
@@ -41,3 +42,6 @@ r.close();
 
 
 
+	}
+
+}
