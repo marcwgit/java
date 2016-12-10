@@ -15,13 +15,13 @@ String name="";
 
 System.out.println("Enter an integer: ");  
 name=br.readLine(); 
-System.out.println("number is "+firstinteger);
+System.out.println("number is "+name);
 //value1 = Integer.valueof(name);
 firstinteger = Integer.parseInt(name);
 
 System.out.println("Enter an integer"); 
 name =br.readLine();
-System.out.println("number is "+secondinteger);
+System.out.println("number is "+name);
 //value2 = Integer.valueof(name);
 secondinteger = Integer.parseInt(name);
 
@@ -31,7 +31,7 @@ if(firstinteger<=secondinteger){
 lowernumber=firstinteger;}
 for(int count=lowernumber;count>1;count--){
 if((firstinteger%count==0)&&(secondinteger%count==0)){
-System.out.print(count);
+System.out.println(count);
 		break;}
 }
 	br.close();  
