@@ -1,1 +1,23 @@
+import TurtleGraphics.KeyboardReader;
+
+
+public class p3ex14 {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		int numberofboxes;
+		System.out.println("How many boxes?");
+		numberofboxes=reader.readInt();
+		for(int count=1;count<=numberofboxes;count++){
+			System.out.println("AMY'S GARDEN EMORIUM");
+			System.out.println("SUNTAN, IOWA 12345");
+			System.out.println("BOX NUMBER "+count+" of "+numberofboxes+"");
+			
+
+		}
+	}
+
+}
 
