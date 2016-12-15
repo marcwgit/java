@@ -1,0 +1,40 @@
+package TurtleGraphics;
+
+import java.text.DecimalFormat;
+
+public class ex16p3 {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		DecimalFormat df=new DecimalFormat("0.00");
+		char grade;
+		int  passed=0, failed=0, allstudents=0;
+		double failpercent, passpercent;
+		
+		do{ System.out.println("Enter a grade (Z to quit):");
+		grade=reader.readChar();
+		if ( grade=='a'||grade=='b'||grade=='c'||grade=='d')
+		{
+			passed++;
+			}
+			else 
+			if(grade=='e'||grade=='f')
+			{
+				failed++;	
+			}
+		}while (grade!='z');{
+			
+		}
+		allstudents=passed+failed;
+		failpercent=(double)failed/allstudents*100;
+		passpercent=(double)passed/allstudents*100;
+		System.out.println(""+passed+" students passed: "+passpercent+"");
+		System.out.println(""+failed+" students failed: "+failpercent+"");
+		}
+	
+			
+
+
+	}
