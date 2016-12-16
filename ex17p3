@@ -1,0 +1,25 @@
+package TurtleGraphics;
+
+public class ex17p3 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		int start, end, squared, cubed;
+		System.out.println("Enter starting value:");
+		start=reader.readInt();
+		System.out.println("Enter ending value:");
+		end=reader.readInt();	
+		System.out.println("x\t x squared\t x cubed");
+			for(int x=start; x<=end; x++){
+			    start++;
+				squared=x*x;
+				cubed= x*x*x;
+				System.out.println(""+x+"\t "+squared+"\t\t "+cubed+"");
+			}
+
+		}
+	}
+//construced this by myself. except for a few typing errors, i basically had it.
