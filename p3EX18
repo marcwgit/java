@@ -1,0 +1,23 @@
+package TurtleGraphics;
+
+public class p3EX18 
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		int numberofgrades, total=0, average;
+		System.out.println("How many grades?");
+		numberofgrades=reader.readInt();
+		int grade, count=1;
+		while(count<=numberofgrades)
+		{
+			System.out.println("Enter a grade:");
+			grade=reader.readInt();
+			total=total+grade;
+		}
+		System.out.println("Total is "+total+"" );
+		average=total/numberofgrades;
+	}
+
+}
