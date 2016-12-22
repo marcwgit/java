@@ -11,25 +11,27 @@ public class p3EX18
 		DecimalFormat df=new DecimalFormat("0.00");
 		int numberofgrades, total=0;
 		double average;
-		System.out.println("How many grades?");
-		numberofgrades=reader.readInt();
-		int grade, count=1;
-		System.out.println("Enter a grade:");
-		grade=reader.readInt();
+		//c
+		int grade = 0, count=0;
 		while(grade!=-1)
 		{
-			if(grade<0)||(grade>100){
-				System.out.println(""+grade+" is not acceptable");
-			}
-			total=total+grade;
-			count++;
 			System.out.println("Enter a grade:");
 			grade=reader.readInt();
+			if(grade == -1)
+				break;
+			else if(grade<0 || grade>100)
+			{
+				System.out.println(""+grade+" is not an acceptable grade");
+			}
+			else
+			{
+				total=total+grade;
+				count++;
+			}
 		}
 		System.out.println("Total is "+total+"" );
-		average=(double)total/numberofgrades;
+		average=(double)total/count;
 		System.out.println("The average is "+df.format(average)+"");
 	}
 
 }
-
