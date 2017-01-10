@@ -1,0 +1,30 @@
+package TurtleGraphics;
+
+public class e19p3 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		int integer, answer, factorial;
+		System.out.println("Enter an integer");
+		integer=reader.readInt();
+			
+		}if(integer<0){
+
+			System.out.println(""+integer+"! is undefined.");
+		}
+		else if(integer==0)
+			System.out.println("0!=1");
+		else{
+		int integer;
+		for(int factorial=1;integer>=1;integer--)
+		{
+			factorial=factorial*integer;
+		}
+		System.out.println(""+integer+"!="+factorial+"");
+		
+	}
+}
+}
