@@ -1,0 +1,29 @@
+package TurtleGraphics;
+
+import java.text.DecimalFormat;
+
+public class EX20P3 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		DecimalFormat df=new DecimalFormat("0.00");
+		double investment, interest, interestRate, totalInterest=0;
+		int year=1;
+		System.out.println("Enter initial investment");
+		investment=reader.readDouble();
+		do{
+			
+			System.out.println("Enter interest rate for year"+year+" (decimal)");
+			interestRate=reader.readDouble();
+			interest=investment*interestRate;
+			totalInterest=totalInterest+interest;
+			System.out.println("You earned $"+(df.format(totalInterest)));
+			investment=interest+investment;
+			year++;
+		}while(year<=5);
+		System.out.println(df.format(investment));
+	}
+}
