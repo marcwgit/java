@@ -1,0 +1,32 @@
+package TurtleGraphics;
+
+public class p3ex22 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		int kubakvotes, kellyvotes,  wardswonkubak=0, wardswonkelly=0, ward=1, totalkubak=0, totalkelly=0;
+		double kubakpercent, kellypercent;
+		
+		do{
+			System.out.println("Ward "+ward+"");
+			System.out.println("Enter Kubak: ");
+			kubakvotes=reader.readInt();
+			System.out.println("Enter Kelly: ");
+			kellyvotes=reader.readInt();
+			totalkubak=totalkubak+kubakvotes;
+		totalkelly=totalkelly+kellyvotes;
+		ward++;
+		}while(ward<=6);
+
+		
+		kubakpercent=(double)totalkubak/(totalkubak+totalkelly)*100;
+		kellypercent=(double)totalkelly/(totalkubak+totalkelly)*100;
+
+		System.out.println("Name+\t+Votes+\t+Percent+\t+WardsWon");
+		System.out.println("Kubak+\t+"+totalkubak+"+\t+"+kubakpercent+"+\t+");
+	}
+
+}
