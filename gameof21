@@ -1,0 +1,14 @@
+package TurtleGraphics;
+
+public class gameof21 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+StandardPen pen=new StandardPen();
+		drawcards  object=new drawcards();
+		object.drawcards(pen);
+	}
+
+}
