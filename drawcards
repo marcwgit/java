@@ -1,0 +1,75 @@
+package TurtleGraphics;
+
+import java.util.Random;
+
+public class drawcards 
+{
+public void drawcards (StandardPen pen)
+	{
+	Random generator=new Random();
+
+pen.setDirection(0);
+pen.move(70);
+pen.setDirection(90);
+pen.move(140);
+pen.setDirection(180);
+pen.move(70);
+pen.setDirection(270);
+pen.move(140);
+//DIAMOND
+pen.up();
+pen.setDirection(90);
+pen.move(70);
+pen.setDirection(0);
+pen.move(13);
+pen.down();
+pen.setDirection(45);
+pen.move(30);
+pen.setDirection(315);
+pen.move(30);
+pen.setDirection(225);
+pen.move(30);
+pen.setDirection(135);
+pen.move(30);
+pen.up();
+pen.setDirection(0);
+pen.move(80);
+pen.setDirection(270);
+pen.move(70);
+pen.down();
+
+pen.setDirection(0);
+pen.move(70);
+pen.setDirection(90);
+pen.move(140);
+pen.setDirection(180);
+pen.move(70);
+pen.setDirection(270);
+pen.move(140);
+//HEARTS
+pen.up();
+pen.setDirection(90);
+pen.move(70);
+pen.setDirection(0);
+pen.move(35);
+pen.down();
+pen.setDirection(180);
+for(int count=1; count<=70; count++){
+	pen.move(1);
+pen.turn(1);}
+
+
+
+String cardValue="";
+int number; number=(13)+1;
+cardValue=cardValue+number;
+pendrawString(cardValue);
+}
+
+private void pendrawString(String cardValue) {
+	// TODO Auto-generated method stub
+	
+}
+
+
+}
