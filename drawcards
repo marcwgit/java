@@ -49,16 +49,26 @@ pen.move(200);
 //HEARTS
 pen.up();
 pen.setDirection(90);
-pen.move(100);
+pen.move(120);
 pen.setDirection(0);
-pen.move(50);
+pen.move(45);
 pen.down();
-pen.setDirection(170);
-for(int count=1; count<=40; count++){
+pen.setDirection(100);
+for(int count=1; count<=70; count++){
 	pen.move(1);
-pen.turn(1);}
-pen.setDirection(295);
-pen.move(70);
+pen.turn(3);}
+pen.setDirection(300);
+pen.move(67);
+pen.setDirection(53);
+pen.move(68);
+pen.setDirection(50);
+for(int count=1; count<=70; count++){
+	pen.move(1);
+pen.turn(3);}
+pen.up();
+pen.setDirection(0);
+pen.move(100);
+
 
 
 
