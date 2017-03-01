@@ -37,20 +37,24 @@ public class drawcards
 		pen.setDirection(0);
 		pen.move(120);
 		pen.setDirection(90);
-		pen.move(230);
+		pen.move(220);
 		pen.drawString(cardValue);
 
 
 		//move to where each suit will be drawn
 		pen.up();
-		pen.setDirection(d);
+		pen.setDirection(180);
+		pen.move(68);
+		pen.setDirection(270);
+		pen.move(110);
+		//pen.setDirection
 		
 
 		
 		
 		
 		suit=generator.nextInt(4)+1;
-		suit=1;
+		suit=2;
 		if(suit==1)
 			DrawDiamond(pen);
 		if(suit==2)
@@ -65,14 +69,21 @@ public class drawcards
 
 
 	}
+	public void DrawClubs(StandardPen pen)
+	{
+		//CLUBS
+pen.setWidth(20);
+
+
+	}
 	public void DrawDiamond(StandardPen pen)
 	{
 		//DIAMOND
 		
 		pen.down();
 		pen.setWidth(60);
-		pen.setDirection(30);
-		pen.move(30);
+		pen.setDirection(45);
+		pen.move(3);
 		//move to where next card is drawn
 
 
@@ -83,22 +94,25 @@ public class drawcards
 		//HEARTS
 		pen.up();
 		pen.setDirection(90);
-		pen.move(120);
+		pen.move(30);
 		pen.setDirection(0);
-		pen.move(45);
+		pen.move(30);
 		pen.down();
+		pen.setWidth(25);
 		pen.setDirection(57);
-		for(int count=1; count<=80; count++){
+		for(int count=1; count<=360; count++){
 			pen.move(1);
-			pen.turn(3);}
+			pen.turn(4);}
+		pen.setWidth(10);
 		pen.setDirection(300);
 		pen.move(67);
 		pen.setDirection(53);
 		pen.move(68);
 		pen.setDirection(57);
+		pen.setWidth(25);
 		for(int count=1; count<=80; count++){
 			pen.move(1);
-			pen.turn(3);}
+			pen.turn(4);}
 		pen.up();
 		pen.setDirection(0);
 		pen.move(100);
@@ -109,13 +123,7 @@ public class drawcards
 		pen.move(70);
 
 	}
-	public void DrawClubs(StandardPen pen)
-	{
-		//CLUBS
-
-
-
-	}
+	
 
 	public void DrawSpades(StandardPen pen)
 	{
