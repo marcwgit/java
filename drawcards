@@ -1,5 +1,6 @@
 package TurtleGraphics;
 
+import java.awt.Color;
 import java.util.Random;
 
 public class drawcards 
@@ -96,42 +97,71 @@ pen.setWidth(20);
 		pen.setDirection(90);
 		pen.move(30);
 		pen.setDirection(0);
-		pen.move(30);
+		pen.move(35);
 		pen.down();
-		pen.setWidth(25);
+		pen.setWidth(2);
 		pen.setDirection(0);
 		for(int count=1; count<=360; count++){
-			pen.move(50);
+			pen.move(45);
 			pen.turn(180);
+			pen.move(45);
 			pen.turn(1);}
-		pen.setWidth(30);
-		pen.setDirection(300);
-		pen.move(80);
-		pen.setDirection(48);	
-		pen.move(68);
 		pen.up();
 		pen.setDirection(180);
-		pen.move(30);
+		pen.move(7);
 		pen.down();
-		pen.setDirection(57);
-		pen.setWidth(25);
+	
+		pen.setColor(Color.green);
+		pen.setWidth(2);
+		pen.setDirection(180);
+		pen.move(40);
+		pen.down();
+		
+		pen.setColor(Color.red);
+		pen.setWidth(2);
 		for(int count=1; count<=360; count++){
-			pen.move(50);
+			pen.move(45);
 			pen.turn(180);
+			pen.move(45);
 			pen.turn(1);}
-		pen.up();
-		pen.setDirection(0);
-		pen.move(100);
-		pen.up();
-		pen.setDirection(0);
-		pen.move(100);
-		pen.setDirection(270);
-		pen.move(70);
+pen.up();
+pen.setDirection(270);
+pen.move(10);
+pen.down();
+
 
 	}
 	
 
 	public void DrawSpades(StandardPen pen)
 	{
+		pen.up();
+		pen.setDirection(270);
+		pen.move(30);
+		pen.down();
+		pen.setWidth(10);
+		pen.setDirection(0);
+		pen.move(12);
+		pen.setDirection(135);
+		pen.move(10);
+		pen.setDirection(225);
+		pen.move(9);
+		pen.up();
+		pen.setDirection(90);
+		pen.move(13);
+		pen.setDirection(0);
+		pen.move(8);
+		pen.down();
+		pen.setWidth(7);
+		pen.setDirection(50);
+		for(int count=1; count<=360; count++){
+			pen.move(15);
+			pen.turn(180);
+			pen.turn(1);}
+		pen.setDirection(130);
+		for(int count=1; count<=360; count++){
+			pen.move(15);
+			pen.turn(180);
+			pen.turn(1);}
 	}
 	}
