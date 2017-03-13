@@ -55,7 +55,7 @@ public class drawcards
 		
 		
 		suit=generator.nextInt(4)+1;
-		suit=2;
+		suit=4;
 		if(suit==1)
 			DrawDiamond(pen);
 		if(suit==2)
@@ -74,6 +74,20 @@ public class drawcards
 	{
 		//CLUBS
 pen.setWidth(20);
+pen.down();
+pen.setDirection(270);
+pen.move(40);
+pen.up();
+pen.setDirection(180);
+pen.move(50);
+pen.down();
+pen.setDirection(0);
+for(int count=1; count<=360; count++){
+	pen.move(45);
+	pen.turn(180);
+	pen.move(45);
+	pen.turn(1);}
+
 
 
 	}
@@ -99,6 +113,7 @@ pen.setWidth(20);
 		pen.setDirection(0);
 		pen.move(35);
 		pen.down();
+		pen.setColor(Color.red);
 		pen.setWidth(2);
 		pen.setDirection(0);
 		for(int count=1; count<=360; count++){
@@ -111,7 +126,7 @@ pen.setWidth(20);
 		pen.move(7);
 		pen.down();
 	
-		pen.setColor(Color.green);
+		pen.setColor(Color.red);
 		pen.setWidth(2);
 		pen.setDirection(180);
 		pen.move(40);
@@ -124,13 +139,15 @@ pen.setWidth(20);
 			pen.turn(180);
 			pen.move(45);
 			pen.turn(1);}
-pen.up();
-pen.setDirection(270);
-pen.move(10);
-pen.down();
 
-
-	}
+pen.setColor(Color.red);
+pen.setWidth(53);
+pen.setDirection(180);
+pen.move(15); //
+pen.setDirection(310);
+pen.move(55);
+pen.setDirection(40);
+pen.move(47);	}
 	
 
 	public void DrawSpades(StandardPen pen)
@@ -153,15 +170,28 @@ pen.down();
 		pen.move(8);
 		pen.down();
 		pen.setWidth(7);
+		pen.setDirection(180);
+		pen.move(10);
 		pen.setDirection(50);
 		for(int count=1; count<=360; count++){
 			pen.move(15);
 			pen.turn(180);
 			pen.turn(1);}
+		pen.setDirection(0);
+		pen.move(10);
 		pen.setDirection(130);
 		for(int count=1; count<=360; count++){
 			pen.move(15);
 			pen.turn(180);
 			pen.turn(1);}
+		pen.setDirection(90);
+		pen.move(10);
+		
+		for(int count=1; count<=360; count++){
+			pen.move(15);
+			pen.turn(180);
+			pen.turn(1);}
+		
+	
 	}
 	}
