@@ -1,14 +1,24 @@
 package TurtleGraphics;
 
+import java.util.Random;
+
 public class gameof21 
 {
 
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-StandardPen pen=new StandardPen();
+		StandardPen pen=new StandardPen();
 		drawcards  object=new drawcards();
-		object.drawcards(pen);
+		int numberofcards, dealerCard1, dealerCard2, playercard1, playercard2;
+		Random generator=new Random();
+		
+		dealerCard1=object.Drawcard(pen);
+		dealerCard2=object.Drawcard(pen);
+		playercard1=object.Drawcard(pen);
+		playercard2=object.Drawcard(pen);
+		System.out.println("How many cards do you want?");
+		
 	}
 
 }
