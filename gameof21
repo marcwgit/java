@@ -10,14 +10,11 @@ public class gameof21
 		// TODO Auto-generated method stub
 		StandardPen pen=new StandardPen();
 		drawcards  object=new drawcards();
-		int numberofcards, dealerCard1, dealerCard2, playercard1, playercard2;
+		int numberofcards, dealerCard1, dealerCard2, playercard1, playercard2, playertotal;
 		Random generator=new Random();
 		
-		dealerCard1=object.Drawcard(pen);
-		dealerCard2=object.Drawcard(pen);
-		playercard1=object.Drawcard(pen);
-		playercard2=object.Drawcard(pen);
-		System.out.println("How many cards do you want?");
+		playertotal=playercard1+playercard2;
+		System.out.println("The dealer has 
 		
 	}
 
