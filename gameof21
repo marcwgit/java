@@ -12,9 +12,13 @@ public class gameof21
 		drawcards  object=new drawcards();
 		int numberofcards, dealerCard1, dealerCard2, playercard1, playercard2, playertotal;
 		Random generator=new Random();
-		
+		playerCard1=object.Drawcard(pen);
+		playerCard2=object.Drawcard(pen);
 		playertotal=playercard1+playercard2;
-		System.out.println("The dealer has 
+		dealerCard1=object.Drawcard(pen);
+		System.out.println("The dealer has "+dealerCard1+" and you have "+playertotal+");
+		if(playertotal>=21){
+		
 		
 	}
 
