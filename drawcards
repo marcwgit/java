@@ -242,7 +242,14 @@ public class drawcards
 			pen.move(20);
 			pen.turn(1);}
 		//pen.setColor(Color.green);
-
+		pen.setDirection(0);
+		
+		
+		@ end of triangle
+		pen.setDirection(0);
+		penmove(???);
+		pen.setDirection(???);
+		
 
 		//space in between cards
 		pen.setDirection(0);
