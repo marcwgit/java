@@ -245,11 +245,11 @@ public class drawcards
 		pen.setDirection(0);
 		
 		
-		@ end of triangle
+		//@ end of triangle
 		pen.setDirection(0);
 		penmove(???);
-		pen.setDirection(???);
-		
+		pen.setDirection(270);
+		penmove(???);
 
 		//space in between cards
 		pen.setDirection(0);
