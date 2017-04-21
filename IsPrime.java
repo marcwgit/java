@@ -19,4 +19,4 @@ userinput= Long.parseLong(name);
 			result=false;
 			}
 		}
-System.out.println(			   }
+System.out.println(Boolean.tosring(result));		   }
