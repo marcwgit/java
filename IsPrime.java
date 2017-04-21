@@ -8,5 +8,5 @@ long userinput=0;
 System.out.println("Enter an integer: ");  
 name=br.readLine(); 
 System.out.println("number is "+name);
-//value1 = Integer.valueof(name);
-firstinteger = long.parselong(name);
+//value1 = Integer.valueof(na
+userinput= Long.parseLong(name);
