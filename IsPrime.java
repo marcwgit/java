@@ -19,5 +19,6 @@ userinput= Long.parseLong(name);
 			result=false;
 			}
 		}
-System.out.println(s1);		   
-String s1=Boolean.tostring(result);}}}
+String s1=Boolean.tostring(result);
+		System.out.println(s1);		   
+}}
