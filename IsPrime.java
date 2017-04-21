@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 //import java.io.*;
 public class IsPrime.java{
 
-	public static void main(String[] args)throws Exception
+	public static void main(String[] args)throws Exception{
 long userinput=0, maxinput=0;
 	boolean result=true; //true means number is prime.
 System.out.println("Enter an integer: ");  
@@ -19,4 +19,4 @@ userinput= Long.parseLong(name);
 			result=false;
 			}
 		}
-System.out.println(Boolean.tosring(result));		   }
+System.out.println(Boolean.tosring(result));		   }}
