@@ -11,4 +11,6 @@ System.out.println("number is "+name);
 //value1 = Integer.valueof(na
 userinput= Long.parseLong(name);
 	maxinput=(userinput/2)+1;
-for(int count=2; 
+	int j=maxinput.intValue();
+	System.out.println("Value of j "+J+");
+			   
