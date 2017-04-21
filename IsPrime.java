@@ -4,9 +4,9 @@ import java.io.InputStreamReader;
 public class IsPrime.java{
 
 	public static void main(String[] args)throws Exception
-long=0;
+long userinput=0;
 System.out.println("Enter an integer: ");  
 name=br.readLine(); 
 System.out.println("number is "+name);
 //value1 = Integer.valueof(name);
-firstinteger = Integer.parseInt(name);
+firstinteger = long.parselong(name);
