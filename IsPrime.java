@@ -15,7 +15,8 @@ userinput= Long.parseLong(name);
 	int j=maxinput.intValue();
 	System.out.println("Value of j "+J+");
 		for(int count=2; j;count++){
-			if(userinput%2=0){
+			if(userinput%count=0){
 			result=false;
 			}
 		}
+System.out.println(			   }
