@@ -13,10 +13,11 @@ System.out.println("number is "+name);
 userinput= Long.parseLong(name);
 	maxinput=(userinput/2)+1;
 	int j=maxinput.intValue();
-	System.out.println("Value of j "+J+");
+	System.out.println("Value of j "+J);
 		for(int count=2; j;count++){
 			if(userinput%count=0){
 			result=false;
 			}
 		}
-System.out.println(Boolean.tosring(result));		   }}}
+System.out.println(s1);		   
+String s1=Boolean.tostring(result);}}}
