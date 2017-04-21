@@ -6,7 +6,7 @@ public class IsPrime{
 	public static void main(String[] args)throws Exception{
 long userinput=0, maxinput=0;
 	boolean result=true; //true means number is prime.
-		string name="";
+		String name="";
 System.out.println("Enter an integer: ");  
 name=br.readLine(); 
 System.out.println("number is "+name);
@@ -23,3 +23,4 @@ userinput= Long.parseLong(name);
 String s1=Boolean.tostring(result);
 		System.out.println(s1);		   
 }}
+
