@@ -4,7 +4,7 @@ import java.lang.*;
 public class IsPrime{
 
 	public static void main(String[] args)throws Exception{
-long userinput=0, maxinput=0;
+Long userinput=0.0, maxinput=0.0;
 	boolean result=true; //true means number is prime.
 		String name="";
 System.out.println("Enter an integer: ");  
