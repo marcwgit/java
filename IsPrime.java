@@ -20,7 +20,7 @@ userinput= Long.parseLong(name);
 			result=false;
 			}
 		}
-String s1=Boolean.Tostring(result);
+String s1=Boolean.toString(result);
 		System.out.println(s1);		   
 }}
 
