@@ -1,6 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-//import java.io.*;
+import java.lang;
 public class IsPrime{
 
 	public static void main(String[] args)throws Exception{
@@ -8,7 +8,7 @@ long userinput=0, maxinput=0;
 	boolean result=true; //true means number is prime.
 		String name="";
 System.out.println("Enter an integer: ");  
-name=br.readLine(); 
+name=System.console().readLine(); 
 System.out.println("number is "+name);
 //value1 = Integer.valueof(na
 userinput= Long.parseLong(name);
@@ -20,7 +20,7 @@ userinput= Long.parseLong(name);
 			result=false;
 			}
 		}
-String s1=Boolean.tostring(result);
+String s1=Boolean.Tostring(result);
 		System.out.println(s1);		   
 }}
 
