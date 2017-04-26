@@ -7,7 +7,7 @@ public class Ex8Main{
 		Numbers object= new Numbers();
 		System.out.println("Enter an integer");
 		number=reader.readInt();
-		int num= object.BreakUp(number);
-		System.println(number);
+		int newnumber= object.BreakUp(number);
+		System.println("+number+");
 	}
 }
