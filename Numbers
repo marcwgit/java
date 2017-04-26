@@ -1,0 +1,28 @@
+package TurtleGraphics;
+
+public class Numbers {
+	public int BreakUp(int number){
+		// TODO Auto-generated method stub
+		KeyboardReader reader = new KeyboardReader();
+		int hundreds, tens, ones;
+		hundreds=number/100;
+		number=number%100;
+		
+		
+		int newnumber;
+		newnumber= int BuildUp(hundreds,tens,ones);
+		return(newnumber)
+		{
+			
+			
+			
+			
+			
+			
+				
+			
+		}
+		
+	}
+
+}
