@@ -1,0 +1,13 @@
+package TurtleGraphics;
+public class Ex8Main{
+	
+	public static void main(String args[]){
+		KeyboardReader reader= new KeyboardReader();
+		int number;
+		Numbers object= new Numbers();
+		System.out.println("Enter an integer");
+		number=reader.readInt();
+		int num= object.BreakUp(number);
+		System.println(number);
+	}
+}
