@@ -4,19 +4,23 @@ public class Numbers {
 	public int BreakUp(int number){
 		// TODO Auto-generated method stub
 		KeyboardReader reader = new KeyboardReader();
-		int hundreds, tens, ones;
+		int hundreds=0, tens=0, ones=0;
 		hundreds=number/100;
 		number=number%100;
-		
-		
+		tens=number/10;
+		ones=number%10;
+		// The integer number is only a two digit number.
 		int newnumber;
-		newnumber= int BuildUp(hundreds,tens,ones);
-		return(newnumber)
-		{
+		newnumber= BuildUp(hundreds, tens, ones);{
+		return(newnumber);
+		
 			
 			
 			
-			
+		public int(int hundreds, int tens, int ones){
+			int number=(hundreds*100)+(tens*10)+(ones);
+			return(number);
+		}
 			
 			
 				
@@ -24,5 +28,6 @@ public class Numbers {
 		}
 		
 	}
+
 
 }
