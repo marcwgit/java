@@ -8,6 +8,12 @@ public class Ex8Main{
 		System.out.println("Enter an integer");
 		number=reader.readInt();
 		int newnumber= object.BreakUp(number);
-		System.println("+number+");
+		System.out.println(newnumber);
+		if (number!=newnumber){
+			System.out.println("ERROR");
+		}
+		
+	
 	}
 }
+
