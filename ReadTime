@@ -1,0 +1,16 @@
+package TurtleGraphics;
+
+public class ReadTime 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		KeyboardReader reader= new KeyboardReader();
+		Time object=new Time();
+		object.ReadTime();
+		
+
+	}
+
+}
