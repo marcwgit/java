@@ -1,0 +1,26 @@
+package TurtleGraphics;
+
+public class Time 
+{
+
+	public void ReadTime()
+	{
+		int minutes, seconds;
+		KeyboardReader reader = new KeyboardReader();
+		System.out.println("Enter time in minutes:");
+		minutes=reader.readInt();
+		System.out.println("Enter time in seconds:");
+		seconds=reader.readInt();
+		DisplayTime(minutes, seconds);
+	}
+
+	public void DisplayTime(int hours, int minutes, int seconds)
+	{
+		int dhours=0, dmins=0, realtime=0;
+		dhours=minutes/60;
+		dmins=minutes%60;
+		int realtime=(dhours)+(dmins)+(seconds);
+		
+	}
+	
+}
