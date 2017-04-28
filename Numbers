@@ -1,7 +1,9 @@
 package TurtleGraphics;
 
-public class Numbers {
-	public int BreakUp(int number){
+public class Numbers 
+{
+	public int BreakUp(int number)
+	{
 		// TODO Auto-generated method stub
 		KeyboardReader reader = new KeyboardReader();
 		int hundreds=0, tens=0, ones=0;
@@ -11,21 +13,17 @@ public class Numbers {
 		ones=number%10;
 		// The integer number is only a two digit number.
 		int newnumber;
-		newnumber= BuildUp(hundreds, tens, ones);{
+		newnumber= BuildUp(hundreds, tens, ones);
 		return(newnumber);
 		
-			
-			
-			
-		public int(int hundreds, int tens, int ones){
-			int number=(hundreds*100)+(tens*10)+(ones);
-			return(number);
-		}
-			
-			
-				
-			
-		}
+		
+	}
+	
+	public int BuildUp (int hundreds, int tens, int ones)
+	{
+		
+		int newnumber=(hundreds*100)+(tens*10)+(ones);
+		return(newnumber);
 		
 	}
 
