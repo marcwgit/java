@@ -1,31 +1,65 @@
-package TurtleGraphics;
+import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.lang.*;
+public class thing {
 
-public class Numbers 
-{
-	public int BreakUp(int number)
-	{
-		// TODO Auto-generated method stub
-		KeyboardReader reader = new KeyboardReader();
-		int hundreds=0, tens=0, ones=0;
-		hundreds=number/100;
-		number=number%100;
-		tens=number/10;
-		ones=number%10;
-		// The integer number is only a two digit number.
-		int newnumber;
-		newnumber= BuildUp(hundreds, tens, ones);
-		return(newnumber);
-		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub 
+//		int newnumber;
+		int programinput=readInput("Put in a number 0-999:");
+		System.out.println("programinput "+programinput);
+		BreakUp(programinput);
+		for(int count=0;count<1000;count++){
+			BreakUp(count);
+		}
 		
 	}
-	
-	public int BuildUp (int hundreds, int tens, int ones)
-	{
-		
-		int newnumber=(hundreds*100)+(tens*10)+(ones);
-		return(newnumber);
-		
-	}
+		 static Integer readInput(String inpPrompt){
+		      int a;
+//		      float b;
+//		      String s;
+//			String prompt = inpPrompt;
 
+		      Scanner in = new Scanner(System.in);
 
+				System.out.print("Enter "+inpPrompt+": ");
+		      a = in.nextInt();
+				System.out.println();
+		      System.out.println("You entered "+a+" "+ inpPrompt);
+			  return a;
+		 }
+			public static void BreakUp(int number)
+			{
+				// TODO Auto-generated method stub
+				//KeyboardReader reader = new KeyboardReader();
+				int hundreds=0, tens=0, ones=0,newnumber, originalnumber;
+				originalnumber=number;
+				hundreds=number/100;
+				number=number%100;
+				tens=number/10;
+				ones=number%10;
+				//testingSystem.out.println("breakup"+hundreds+""+tens+""+ones );
+				// The integer number is only a two digit number.
+				//int newnumber;
+				//newnumber= BuildUp(hundreds, tens, ones);
+				//return(newnumber);
+				newnumber=BuildUp(hundreds,tens,ones);
+				//testingSystem.out.print("end of break up"+newnumber);
+				System.out.println(newnumber);
+				System.out.println(originalnumber);
+				if(originalnumber!=newnumber){
+					System.out.println("ERROR");
+				}
+			}
+			public static int BuildUp (int hundreds, int tens, int ones)
+			{
+				
+				int newnumber=(hundreds*100)+(tens*10)+(ones);
+				//testingSystem.out.println("inbuildup"+newnumber);
+				return(newnumber);
+				
+			}	
 }
+
+
+
