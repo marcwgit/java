@@ -1,0 +1,33 @@
+package TurtleGraphics;
+
+public class Ex10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		KeyboardReader reader= new KeyboardReader();
+		//define and read in numerator and denominator
+		int numerator, denominator, answern, answerd;
+		System.out.println("Enter the numerator:");
+		numerator=reader.readInt();
+		System.out.println("Enter the denominator:");
+		denominator=reader.readInt();
+		//define function and next two lines are in dowhile loop
+		public void Reduce ( int commonfactor){
+			do{
+				// w/ 1 forloop for numerator, counta &1 for denominator,countb
+				for(int counta=numerator-1;counta<numerator; counta--){
+					answern=numerator%counta;
+				}
+				for(int countb=denominator-1; countb<denominator; countb--){
+					answerd=denominator%countb;
+				}
+				if((answern=0)&&(answerd=0)&&(counta==countb)){
+					System.out.println("The GCF is "+counta+".");
+				}
+			} //end of do loop; while()
+		}
+		//if statement-->when counta==countb,gcf is found and printed for checking
+		//divide numerator and denominator b gcf and print 
+	}//end of method
+
+}//end of class
