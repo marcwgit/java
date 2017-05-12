@@ -5,22 +5,35 @@ public class Time
 
 	public void ReadTime()
 	{
-		int minutes, seconds;
+		int minutes, seconds, newmin, newsec;
 		KeyboardReader reader = new KeyboardReader();
 		System.out.println("Enter time in minutes:");
 		minutes=reader.readInt();
 		System.out.println("Enter time in seconds:");
 		seconds=reader.readInt();
-		DisplayTime(minutes, seconds);
+		System.out.println("Enter another time.");
+		System.out.println("Enter time in minutes:");
+		newmin=reader.readInt();
+		System.out.println("Enter time in seconds:");
+		newsec=reader.readInt();
+		AddTime(minutes, seconds, newmin, newsec);
 	}
 
-	public void DisplayTime(int hours, int minutes, int seconds)
+	public void AddTime( int minutes, int seconds, int newmin, int newsec)
 	{
-		int dhours=0, dmins=0, realtime=0;
-		dhours=minutes/60;
-		dmins=minutes%60;
-		int realtime=(dhours)+(dmins)+(seconds);
-		
-	}
-	
-}
+		int totalhours=0, extraMinutes, totalminutes, totalseconds, extraseconds, extraHours;
+		totalseconds=seconds+newsec;
+		extraMinutes=totalseconds/60;
+		extraseconds=totalseconds%60;
+		totalseconds=totalseconds+extraseconds;
+		totalminutes=minutes+newmin+extraMinutes;
+		extraHours=totalminutes/60;
+		//AddTime (newmin, newsec);
+		if((minutes<10)&&(seconds<10)){
+			System.out.println("The display time "+totalhours+":0"+totalminutes+":0"+totalseconds+"");
+		}
+		if((minutes>10)&&(seconds>10)){
+		System.out.println("The display time is "+totalhours+":"+totalminutes+":"+totalseconds+"");
+			//addtime
+			}
+	}}
