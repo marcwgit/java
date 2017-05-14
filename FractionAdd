@@ -1,0 +1,24 @@
+
+public class FractionAdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Fraction fraction1input=new Fraction();
+Fraction fraction2input= new Fraction();
+Fraction fraction3answer=new Fraction();
+fraction1input.ReadFraction();
+fraction2input.ReadFraction();
+
+fraction3answer.numerator=fraction1input.numerator+fraction2input.numerator;
+System.out.println(fraction1input.numerator);
+System.out.println(fraction1input.denominator);
+System.out.println(fraction2input.numerator);
+System.out.println(fraction2input.denominator);
+fraction3answer.denominator=fraction1input.denominator+fraction2input.denominator;
+	fraction3answer.Reduce(fraction3answer.numerator, fraction3answer.denominator);
+	System.out.println(""+fraction3answer.numerator+" and "+fraction3answer.denominator+"");
+	}
+//public static void AddFraction();{
+	
+//}
+}
