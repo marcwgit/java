@@ -1,59 +1,184 @@
 import java.util.Scanner;
+import java.io.*;
+import static java.lang.System.out;
 
 public class Fraction {
-	int numerator=0, denominator=0;
-	public static void ReadFraction(){
+
+	int nnumerator, ddenominator;
+
+	public void ReadFraction(){
+
 		int numerator, denominator;
+
 		numerator=getInputInt("Enter a numerator");
+
 		denominator=getInputInt("Enter a denominator");
+		nnumerator = numerator;
+		ddenominator = denominator;
+		
+		Reduce(numerator,denominator);
+
 }
-	public static void Reduce(int numerator, int denominator){
+
+/*
+	public static void Reduce(){
+
 		
+
 		 int limit, answer, answer1, simplenum, simpledenom;
+
 		if (numerator>=denominator){
+
 	
+
 		limit=denominator;
+
 	}else{
+
 	limit=numerator;
+
 	}
+
 	outerloop:
+
 		for(int count=limit; count>0; count--){
+
 			answer=numerator%count;
+
 			answer1=denominator%count;
+
 	if((answer==0)&&(answer1==0)){
+
 		simplenum=numerator/count;
+
 		simpledenom=denominator/count;
+
 		DisplayFraction(simplenum, simpledenom);
-		//System.out.println("The reduced fraction is "+simplenum+"/"+simpledenom+"");
-	break outerloop;
-	}
-		
-		}}
-	public static void DisplayFraction(int simplenum, int simpledenom){
+
 		System.out.println("The reduced fraction is "+simplenum+"/"+simpledenom+"");
+
+	break outerloop;
+
+	}
+
+		
+
+		}}
+		
+		*/
+
+	public static void Reduce(int numerator, int denominator){
+
+		
+
+		 int limit, answer, answer1, simplenum, simpledenom;
+
+		if (numerator>=denominator){
+
+	
+
+		limit=denominator;
+
+	}else{
+
+	limit=numerator;
+
+	}
+
+	outerloop:
+
+		for(int count=limit; count>0; count--){
+
+			answer=numerator%count;
+
+			answer1=denominator%count;
+
+	if((answer==0)&&(answer1==0)){
+
+		simplenum=numerator/count;
+
+		simpledenom=denominator/count;
+
+		DisplayFraction(simplenum, simpledenom);
+
+		System.out.println("The reduced fraction is "+simplenum+"/"+simpledenom+"");
+
+	break outerloop;
+
+	}
+
+		
+
+		}}
+
+	public static void DisplayFraction(int simplenum, int simpledenom){
+
+		System.out.println("The reduced fraction is "+simplenum+"/"+simpledenom+"");
+
 	}
 	
+	
+	int getNumer(){
+		
+		System.out.println("in getNumer");
+//		System.out.println(""+numerator);
+//		System.out.format("%d%n",this.numerator);
+		System.out.format("%d%n",this.nnumerator);
+		return 5;
+	}
+
+	
+//	public static int getDenom(){
+		
+//		return denominator;
+//	}
+
+	
+
+
+
 
 
 public static int getInputInt(String Request)
+
 {
+
    int a;
+
 //   float b;
+
 //   String s;
+
+
 
    Scanner in = new Scanner(System.in);
 
+
+
 //   System.out.println("Enter a string");
+
 //   s = in.nextLine();
+
 //   System.out.println("You entered string "+s);
 
+
+
    System.out.println(Request);
+
    a = in.nextInt();
+
    //System.out.println("You entered integer "+a+" "+ Request);
+
 	  return a;
 
+
+
 //   System.out.println("Enter a float");
+
 //   b = in.nextFloat();
+
 //   System.out.println("You entered float "+b);   
+
 }
+
 }
