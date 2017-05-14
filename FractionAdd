@@ -33,9 +33,15 @@ System.out.println(fraction1input.nnumerator);
 System.out.println(fraction1input.ddenominator);
 System.out.println(fraction2input.nnumerator);
 System.out.println(fraction2input.ddenominator);
-fraction3answer.ddenominator=fraction1input.ddenominator+fraction2input.ddenominator;
-	fraction3answer.Reduce(fraction3answer.nnumerator, fraction3answer.ddenominator);
+
+
+fraction3answer.ddenominator=fraction1input.ddenominator*fraction2input.ddenominator;
+fraction3answer.nnumerator= (fraction1input.ddenominator*fraction2input.nnumerator)+(fraction1input.nnumerator*fraction2input.ddenominator);
+
 	System.out.println(""+fraction3answer.nnumerator+" and "+fraction3answer.ddenominator+"");
+fraction3answer.Reduce(fraction3answer.nnumerator,fraction3answer.ddenominator);
+
+	
 	}
 //public static void AddFraction();{
 	
